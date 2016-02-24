@@ -1,0 +1,19 @@
+#Options +indexes
+
+RewriteEngine on
+
+RewriteRule ^view/([0-9]+)/?$ /main.php?page=detail&id=$1
+RewriteRule ^page/([0-9a-z]+)/?$ /main.php?page=$1
+RewriteRule ^view/([0-9]+).(htm|html|php)$ /main.php?page=detail&id=$1
+RewriteRule ^main/page/([0-9]+)$ /main.php?page=main&pageID=$1
+RewriteRule ^search/page/([0-9]+)$ /main.php?page=search&pageID=$1
+
+RewriteRule ^n/([\w\-]+)/([\w\-]+)/?$	/cnetwork.php?page=main&network=$1&channel=$2
+RewriteRule ^n/([\w\-]+)/([\w\-]+)/page/([0-9]+)$	/cnetwork.php?page=main&network=$1&channel=$2&pageID=$3
+RewriteRule ^n/([\w\-]+)/([\w\-]+)/view/([0-9]+).(htm|html|php)$	/cnetwork.php?page=detail&network=$1&channel=$2&id=$3
+RewriteRule ^n/([\w\-]+)/([\w\-]+)/search/?$	/cnetwork.php?page=search&network=$1&channel=$2
+RewriteRule ^n/([\w\-]+)/([\w\-]+)/search/page/([0-9]+)$	/cnetwork.php?page=search&network=$1&channel=$2&pageID=$3
+
+RewriteRule ^rss/?$ /rss.php
+RewriteRule ^$ /main.php
+

@@ -1,0 +1,320 @@
+/* NEW LAYOUT FOR IRCBLOG.NET BY BOUDY ::06-08-2011:: */
+body {
+	margin: auto;
+	font-family: Verdana;
+	font-size: 11px;
+	background-color: #666666;
+	/*background-image: url(http://gwei.org/img/bg_index.gif); /*<< partytime! */
+	color: #FFFFFF;
+}
+a img {
+	border: 0;
+	max-width: 540px;
+}
+
+
+#container {
+	width: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+	#header{
+		width: 800px;
+		height: 30px;	
+		background-color: #333333;
+	}
+		#header * {
+			margin: 0;
+			padding: 0;
+		}
+		#header ul li {
+			float: right;
+			list-style-type: none;
+			padding: 8px 10px 0px;
+			width: auto;
+		}
+		#header ul li a {
+			color: #FFFFFF;
+			text-decoration: none;
+			vertical-align: top;
+		}
+		#header ul li a:hover {
+			color: #AAAAAA;
+		}
+		#header a:visited {
+		}
+		
+		#header #sitetitle {
+			float: left !important;
+			font-family: Courier New;
+			font-size: 20px;
+			font-weight: bold; 
+			margin-top: -4px;
+		}
+
+	#content-1col{
+		width: 800px;
+		height: 700px;
+		background-color: #cccccc;
+		margin-top: 5px;
+		float: left;
+		overflow: auto;
+		position: absolute;
+		z-index: 1;
+	}
+		
+		#content-1col #about{
+			padding-left: 60px;
+			padding-top: 40px;
+			padding-right: 60px;
+			color: #333333;
+		}
+		
+		#content-1col #about h1, h2{
+			font-family: Courier New;
+			font-style: italic;
+		}
+		
+		#content-1col #about p{
+		}
+					
+		#content-1col .messagebox_text{
+			text-align: center;
+			color: #333333;
+			font-weight: bold;
+		}
+	
+	#content-2col{
+		width: 580px;
+		height: 700px;
+		background-color: #cccccc;
+		margin-top: 5px;
+		float: left;
+		position: absolute;
+		z-index: 1;
+	}
+	
+		#content-2col #media{
+			overflow: auto;
+			width: 565px;
+			height: 640px;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+			#content-2col #media .item{
+				margin-bottom: 10px;
+				max-width: 540px;
+				height: auto;
+
+			}
+				#content-2col #media .item .item-header{
+					height: 15px;
+					width: auto;
+					background-color: #666666;
+				}
+								
+					#content-2col #media .item .item-header * {
+						margin: 0;
+						padding: 0;
+					}
+					#content-2col #media .item .item-header ul li {
+						float: left;
+						list-style-type: none;
+						padding: 0 5px 0;
+						width: auto;
+					}
+					#content-2col #media .item .item-header ul li a {
+						color: #FFFFFF;
+						text-decoration: none;
+						vertical-align: top;
+					}
+					#content-2col #media .item .item-header ul li a:hover {
+						color: #AAAAAA;
+					}
+					#content-2col #media .item .item-header a:visited {
+					}
+			
+					#content-2col #media .item .item-header .time {
+						float: right !important;
+					}
+					
+				#content-2col #media .messagebox_text{
+					text-align: center;
+					color: #333333;
+					font-weight: bold;
+				}
+				#content-2col #media .searchresult{
+					text-align: center;
+					font-family: Courier New;
+					font-size: 14px;
+					color: #333333;
+				}
+				
+				#content-2col #media .searchresult B{
+					color: red;
+				}
+				
+				#content-2col #media .item .item-content{
+					min-height: 250px;
+					width: auto;
+					background-color: #999999;
+				}
+				
+				#content-2col #media .item .item-content img { 
+					max-width: 540px;
+					min-height: 250px;
+					margin: auto;
+					display: block;
+				}
+				
+				#content-2col #media .item .item-comment{
+					height: auto;
+					width: auto;
+					background-color: #666666;
+				}
+				
+				#content-2col #media .item #item-detail{
+					height: auto;
+					width: auto;
+					margin-top: 10px;
+					background-color: #666666;
+				}
+	
+				#content-2col #media .item #item-detail td {
+					min-width: 100px;
+				}
+				
+			#content-2col #media #page-index{
+				width: 540px;
+				height: auto;
+				color: #333333;
+				font-weight: bold; 
+				text-align: center;
+			}
+				#content-2col #media #page-index a{
+					color: #333333;
+					text-decoration: none;
+				}
+				#content-2col #media #page-index a:hover{
+					color: #FFFFFF;
+				}
+				#content-2col #media #page-index a:visited{
+				}
+				
+	#panel{
+		width: 215px;
+		height: 700px;
+		margin-top: 5px;
+		margin-left: 585px;
+		background-color: #999999;
+		text-align: center;
+	}
+		#panel #channelonlysearch{
+			width: auto;
+			height: 20px;
+			padding-top: 10px;
+			font-style: italic;
+			color: #333333;
+		}
+		
+		#panel #search-bar {
+			width: auto;
+			height: 20px;
+			margin-left: 5px;
+			margin-right: 5px;		
+		}
+			
+		#panel #top-users{
+			width: auto;
+			height: 300px;
+			margin-top: 20px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		
+/*		CSS fix for TOP Channels
+		#panel #top-channels{
+			input_here
+		} */
+	
+			#panel P.top-title{
+				font-family: Courier New;
+				font-weight: bold;
+				font-size: 16px;
+				color: #333333;
+			}
+		
+			#panel P.top-name{
+				font-size: 12px;
+			}
+			
+				#panel table {
+					margin-top: -10px;
+					text-align: center;
+					font-size: 11px;
+				}
+				
+				#panel td {
+					width: 100px;
+				}
+				
+				#panel a{
+					color: #333333;
+					text-decoration: none;
+				}
+				
+				#panel a:hover{
+					color: #666666;
+				}
+				
+				#panel a:visited{
+				}
+				
+		#validate {
+			width: auto;
+			height: auto;
+			margin-top: 290px;
+		}
+			
+			#validate .html a img{
+			}
+			
+			#validate .html a:hover img{
+				background: black;
+			}
+			
+			#validate .html a:visited img{
+			}
+		
+	#footer{
+		width: 585px;
+		height: 30px;
+		background-color: #333333;
+		margin-top: -40px;
+		position: absolute;
+		z-index: 2;
+	}
+		#footer * {
+			margin: 0;
+			padding: 0;
+		}
+		#footer ul li {
+			float: left;
+			font-size: 12px;
+			font-style: italic;
+			list-style-type: none;
+			padding: 6px 10px 0px;
+			width: auto;
+		}
+		#footer ul li a {
+			color: #FFFFFF;
+			text-decoration: none;
+			vertical-align: top;
+		}
+		#footer ul li a:hover {
+			color: #AAAAAA;
+		}
+		#footer a:visited {
+		}

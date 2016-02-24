@@ -1,0 +1,4 @@
+# add to postfix
+filter-ircblog    unix  -   n   n   -   -   pipe
+  flags=Rq user=ircblog-web argv=/etc/postfix/ircblog-submit.php client_address:${client_address} client_helo:${client_helo} client_hostname:${client_hostname} client_port:${client_port} client_protocol:${client_protocol} domain:${domain} extension:${extension} mailbox:${mailbox} nexthop:${nexthop} original_recipient:${original_recipient} recipient:${recipient} sasl_method:${sasl_method} sasl_sender:${sasl_sender} sasl_username:${sasl_username} sender:${sender} size:${size} user:${user}
+
